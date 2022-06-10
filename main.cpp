@@ -1,18 +1,18 @@
 #include <iostream>
 
-#include "remove_element.h"
+#include "./Array/PlusOne/plus_one.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-  leetcode::RemoveElement remove_element;
-  int ret = remove_element.Run(remove_element.nums_, remove_element.val_);
+  leetcode::PlusOne plus_one;
 
-  cout << ret << endl;
+  vector<int> ans = plus_one.Run(plus_one.digits_);
 
-  for (int i = 0; i < ret; ++i) {
-    cout << remove_element.nums_[i] << " ";
+  for (auto num : ans) {
+    cout << num << " ";
   }
+  cout << endl;
 
   return 0;
 }
