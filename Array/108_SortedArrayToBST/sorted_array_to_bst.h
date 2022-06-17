@@ -1,7 +1,11 @@
 #ifndef SORTED_ARRAY_TO_BST_H
 #define SORTED_ARRAY_TO_BST_H
 
+#include <vector>
+
 namespace leetcode {
+
+using namespace std;
 
 struct TreeNode {
   int val;
@@ -13,7 +17,13 @@ struct TreeNode {
       : val(x), left(left), right(right) {}
 };
 
-class SortedArrayToBst {};
+class SortedArrayToBst {
+ public:
+  TreeNode *run(vector<int> &nums);
+
+ public:
+  vector<int> nums_;
+};
 
 }  // namespace leetcode
 

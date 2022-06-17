@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "\"Makefile.sdk\"": "",
+    ".config": "makefile",
+    "optional": "cpp",
+    "sstream": "cpp"
+  }
+}
