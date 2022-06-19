@@ -1,7 +1,14 @@
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
 
+#include <iostream>
+#include <queue>
+#include <utility>
+#include <vector>
+
 namespace leetcode {
+
+using namespace std;
 
 struct BinaryTreeNode {
   int val;
@@ -22,16 +29,22 @@ class BinaryTree {
 
   ~BinaryTree();
 
-  void PreOrder();
+  BinaryTree& operator=(const BinaryTree& t);
 
-  void InOrder();
+  Node* ArrayToBinaryTree(const vector<int> array);
 
-  void PostOrder();
+  void PrevOrder(Node* root);
+
+  void InOrder(Node* root);
+
+  void PostOrder(Node* root);
 
  private:
   Node* Copy(Node* root);
 
- private:
+  void Destroy(Node* root);
+
+ public:
   Node* root_;
 };
 
