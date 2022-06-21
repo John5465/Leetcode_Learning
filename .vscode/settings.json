@@ -4,6 +4,7 @@
     ".config": "makefile",
     "optional": "cpp",
     "sstream": "cpp",
-    "new": "cpp"
+    "new": "cpp",
+    "vector": "cpp"
   }
 }

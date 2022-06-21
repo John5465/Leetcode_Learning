@@ -1,17 +1,18 @@
 #include <iostream>
 
-#include "BinaryTree/binary_tree.h"
+#include "Array/119_YangHuiTriangle_2/yanghui_triangle.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-  vector<int> array = {0, 1, 2};
+  leetcode::YangHuiTriangle yanghui_triangle;
 
-  leetcode::BinaryTree binary_tree;
+  vector<int> ret = yanghui_triangle.getRow(4);
 
-  binary_tree.root_ = binary_tree.ArrayToBinaryTree(array);
-
-  binary_tree.PostOrder(binary_tree.root_);
+  for (auto num : ret) {
+    cout << num << " ";
+  }
+  cout << endl;
 
   return 0;
 }

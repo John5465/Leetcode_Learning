@@ -21,8 +21,11 @@ class SortedArrayToBst {
  public:
   TreeNode *run(vector<int> &nums);
 
+ private:
+  TreeNode *helper(vector<int> &nums, int left, int right);
+
  public:
-  vector<int> nums_;
+  vector<int> nums_ = {-10, -3, 0, 5, 9};
 };
 
 }  // namespace leetcode
