@@ -5,6 +5,7 @@
     "optional": "cpp",
     "sstream": "cpp",
     "new": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "limits": "cpp"
   }
 }

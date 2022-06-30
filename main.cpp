@@ -1,18 +1,15 @@
 #include <iostream>
 
-#include "Array/119_YangHuiTriangle_2/yanghui_triangle.h"
+#include "Array/121_MaxProfit/max_profit.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-  leetcode::YangHuiTriangle yanghui_triangle;
+  leetcode::MaxProfit max_profit;
 
-  vector<int> ret = yanghui_triangle.getRow(4);
+  int ret = max_profit.Run(max_profit.prices);
 
-  for (auto num : ret) {
-    cout << num << " ";
-  }
-  cout << endl;
+  cout << ret << endl;
 
   return 0;
 }
